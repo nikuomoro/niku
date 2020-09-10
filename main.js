@@ -14,7 +14,7 @@ function getValue() {
     var $formObject = document.getElementById("Form" );
     var $merged = $formObject.form1.value + $formObject.form2.value + $formObject.form3.value + $formObject.form4.value;
     document.getElementById( "impression" ).innerHTML = $merged;
-    setTweetButton($merged);
+    setTweetButton($merged+"　キン肉マン感想ジェネレータ https://nikuomoro.github.io");
 }
 function setTweetButton(text){
     $('#tweet').empty();
