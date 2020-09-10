@@ -1,20 +1,67 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "w3.org/TR/xhtml1/DTD/…">
 <html lang="ja">
-<head>
-	<meta charset="UTF-8" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
-	<link rel="stylesheet" href=".css" />
-	<style>
-	</style>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-	<meta name="landscape" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-	<title>肉感想</title>
-</head>
-<body>
-  test
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>キン肉マン感想ジェネレータ</title>
+    <script src="code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="stackpath.bootstrapcdn.com/bootstrap/4.3.…" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body class="container">
+    <form id="Form" class="form-inline">
+    <div class="form-group">
+    <select class="form-control" name="form1">
+    <option selected>今週の</option>
+    <option>今日の</option>
+    <option>今回の</option>
+    </select>
+    </div>
 
-	<script src="./外.js"></script>
-	<script>
-	</script>
-</body>
+    <div class="form-group">
+    <select class="form-control" name="form2">
+    <option selected>キン肉マン</option>
+    <option>キン肉マン最新話</option>
+    <option>肉</option>
+    </select>
+    </div>
+
+    <div class="form-group">
+    <select class="form-control" name="form3">
+    <option selected></option>
+    <option>めちゃくちゃ</option>
+    <option>とても</option>
+    <option>すごく</option>
+    <option>なかなか</option>
+    <option>少し</option>
+    </select>
+    </div>
+
+    <div class="form-group">
+    <select class="form-control" name="form4">
+    <option selected>おもしろかった</option>
+    <option>よかった</option>
+    <option>楽しかった</option>
+    <option>すごかった</option>
+    <option>激しかった</option>
+    <option>強烈だった</option>
+    <option>意外だった</option>
+    <option>つまらなかった</option>
+    <option>退屈だった</option>
+    <option>おもしろくなかった</option>
+    </select>
+    </div>
+
+    </form>
+
+    </div>
+    <div class="h1">感想:
+    </div>
+    <div class="display-4" id="impression">
+    </div>
+    <div>感想と漫画のURLを含むツイートを作成します
+    </div>
+    <span id="tweet">
+    </span>
+    <script async src="platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script type="text/javascript" src="./main.js"></script>
+    </body>
 </html>
