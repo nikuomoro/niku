@@ -19,7 +19,7 @@ function getValue() {
 function setTweetButton(text){
     $('#tweet').empty();
     twttr.widgets.createShareButton(
-            "ebookjapan.yahoo.co.jp/search/?keywor…",
+            "https://ebookjapan.yahoo.co.jp/search/?keyword=%E3%82%AD%E3%83%B3%E8%82%89%E3%83%9E%E3%83%B3&useTitle=0&sort=recent",
             document.getElementById("tweet"),
             {
                 size: "large",
